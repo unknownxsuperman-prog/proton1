@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College Predictor"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="?attr/colorOnSurface"
+        android:layout_marginBottom="12dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your KCET Rank"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginBottom="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Branch (optional, e.g. CSE)"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginBottom="10dp">
+        <AutoCompleteTextView
+            android:id="@+id/etBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:completionThreshold="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dataset"
+        android:textSize="12sp"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:layout_marginBottom="4dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerDataset"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnSearchColleges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/predict_eligibility"
+        style="@style/Widget.MaterialComponents.Button"/>
+
+</LinearLayout>

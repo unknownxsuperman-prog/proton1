@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/bg_card"
+    android:paddingStart="14dp"
+    android:paddingEnd="6dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp">
+
+    <EditText
+        android:id="@+id/etMessageInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="@string/message_hint"
+        android:background="@null"
+        android:textSize="14sp"
+        android:textColor="?attr/colorOnSurface"
+        android:maxLines="5"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionSend"/>
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_send"
+        android:background="@drawable/bg_avatar"
+        android:contentDescription="@string/send"
+        android:padding="8dp"/>
+
+</LinearLayout>

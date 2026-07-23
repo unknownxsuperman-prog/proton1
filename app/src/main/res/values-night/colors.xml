@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="surface_variant">@color/surface_variant_dark</color>
+    <color name="college_card_bg">@color/college_card_bg_dark</color>
+    <color name="tab_strip_bg">@color/tab_strip_bg_dark</color>
+    <color name="outline">@color/outline_dark</color>
+</resources>
