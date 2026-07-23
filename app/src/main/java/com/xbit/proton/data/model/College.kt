@@ -3,6 +3,7 @@ package com.xbit.proton.data.model
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class College(
     val slno: Int = 0,
     val colgcode: String = "",
@@ -13,7 +14,7 @@ data class College(
     val branchcode: String = "",
     val category: String = "",
     val cutoff: Int = 0
-)
+) : Parcelable
 
 @Parcelize
 data class CollegeResult(
