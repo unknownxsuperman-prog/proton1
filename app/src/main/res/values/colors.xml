@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#7C6AF5</color>
+    <color name="primary_variant">#5B4FD4</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <color name="background_dark">#0D0D0F</color>
+    <color name="surface_dark">#18181C</color>
+    <color name="surface_variant_dark">#222228</color>
+    <color name="college_card_bg_dark">#1E1E24</color>
+    <color name="tab_strip_bg_dark">#1A1A20</color>
+    <color name="outline_dark">#3A3A44</color>
+    <color name="on_surface_dark">#F0F0F4</color>
+    <color name="on_surface_variant_dark">#9090A0</color>
+
+    <color name="background_light">#F6F6F9</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#EEEEF3</color>
+    <color name="college_card_bg_light">#F0F0F5</color>
+    <color name="tab_strip_bg_light">#E8E8EE</color>
+    <color name="outline_light">#C8C8D8</color>
+    <color name="on_surface_light">#111114</color>
+    <color name="on_surface_variant_light">#606070</color>
+
+    <!-- Drawable aliases — overridden in values-night -->
+    <color name="surface_variant">@color/surface_variant_light</color>
+    <color name="college_card_bg">@color/college_card_bg_light</color>
+    <color name="tab_strip_bg">@color/tab_strip_bg_light</color>
+    <color name="outline">@color/outline_light</color>
+</resources>

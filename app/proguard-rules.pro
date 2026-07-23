@@ -1,0 +1,4 @@
+-keep class com.xbit.proton.** { *; }
+-keep class com.itextpdf.** { *; }
+-dontwarn com.itextpdf.**
+-keep class com.google.gson.** { *; }
